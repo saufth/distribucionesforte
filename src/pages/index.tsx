@@ -203,7 +203,7 @@ export default function HomePage () {
         <div className='md:w-2/3 lg:w-1/2 lg:pl-10 lg:pr-20 lg:py-48 lg:mx-auto space-y-14 lg:border-x lg:border-x-secondary/40'>
           <article className='space-y-6'>
             <header>
-              <h3 className='text-lg tetx-[27px] text-center md:text-left text-sky-400 md:leading-normal'>
+              <h3 className='text-lg tetx-[27px] text-center md:text-left text-white md:leading-normal'>
                 Misión
               </h3>
             </header>
@@ -215,7 +215,7 @@ export default function HomePage () {
           </article>
           <article className='space-y-6'>
             <header>
-              <h3 className='text-lg tetx-[27px] text-center md:text-left text-sky-400 md:leading-normal'>
+              <h3 className='text-lg tetx-[27px] text-center md:text-left text-white md:leading-normal'>
                 Visión
               </h3>
             </header>
