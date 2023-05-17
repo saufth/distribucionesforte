@@ -1,0 +1,82 @@
+// Components
+import Image from 'next/image'
+import Link from '../navigation/core/Link'
+import NextLink from 'next/link'
+import Menu from '../navigation/Menu'
+import MenuButton from '../input/core/MenuButton'
+// Animation
+import { useCycle } from 'framer-motion'
+// Config
+import { NAV } from '@/modules/navigation/config'
+import { SIZES } from '@/modules/sizing/config'
+import { THEMES } from '@/modules/theme/config'
+
+/**
+ * The main navbar component of the application
+ * @returns The Navbar component
+ */
+export default function Navbar () {
+  // Animation
+  const [isOpen, toggle] = useCycle(false, true)
+  /** Handle the Menu state */
+  const handleToggle = () => { toggle() }
+  /** Close the Menu but not open */
+  const closeToggle = () => { isOpen && toggle() }
+
+  return (
+    <>
+      <header className='absolute top-0 left-0 right-0 z-70 border-b border-b-secondary/40'>
+        <div className='max-w-8xl h-24 mx-auto flex'>
+          <div className=' w-full lg:w-1/4 pl-3% flex items-center justify-between lg:justify-normal'>
+            <NextLink href={NAV.home.href} onClick={closeToggle}>
+              <Image
+                className='w-auto h-10 md:h-14'
+                src={`/images/logo-vertical${isOpen ? '' : '-white'}.svg`}
+                alt='Inicio'
+                width={196}
+                height={56}
+                priority
+              />
+            </NextLink>
+          </div>
+
+          <div className='w-1/2 px-3% hidden lg:flex justify-between items-center border-x border-x-secondary/40'>
+            {[NAV.solutions, NAV.values, NAV.history].map(({ children, href }, key) => {
+              return (
+                <div className='hidden lg:block' key={key}>
+                  <Link href={href} size={SIZES.sm} theme={THEMES.secondary}>
+                    {children.toUpperCase()}
+                  </Link>
+                </div>
+              )
+            })}
+          </div>
+
+          <div className='lg:w-1/4 pr-3% flex justify-end items-center md:gap-x-4'>
+            <NextLink href={NAV.contact.href}>
+              <div className='hidden md:flex gap-x-4 items-center'>
+                <div className='font-primary-semibold text-white'>
+                  CONTÁCTANOS
+                </div>
+                <div className='w-7 h-7 grid place-content-center text-primary text-lg bg-white rounded-full leading-none'>
+                  @
+                </div>
+              </div>
+            </NextLink>
+            {isOpen
+              ? (
+                <div
+                  className='w-7 md:w-8 h-7 md:h-8 grid place-content-center text-4xl cursor-pointer'
+                  onClick={handleToggle}
+                >
+                  X
+                </div>
+                )
+              : <MenuButton action={handleToggle} />}
+          </div>
+        </div>
+      </header>
+      <Menu isOpen={isOpen} action={handleToggle} />
+    </>
+  )
+}
