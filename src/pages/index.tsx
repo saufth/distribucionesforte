@@ -4,8 +4,9 @@ import LinkToAction from '@/components/navigation/LinkToAction'
 import LinkToServices from '@/components/navigation/LinkToServices'
 import PageLayout from '@/components/layout/PageLayout'
 // Config
-import { sectionsImgPath, PAGE_ROUTES, SECTION_ROUTES, NAV } from '@/modules/navigation/config'
+import { IMG_EXT } from '@/modules/data-display/config'
 import { SERVICES, VALUES, description, organization } from '@/modules/app/config'
+import { sectionsImgPath, PAGE_ROUTES, SECTION_ROUTES, NAV } from '@/modules/navigation/config'
 // Types
 import type { MouseEvent } from 'react'
 
@@ -85,7 +86,7 @@ export default function HomePage () {
         <div>
           <article className='space-y-6'>
             <Image
-              src={`/images/sections/${SERVICES_NAMES[0]}.jpg`}
+              src={`${sectionsImgPath}${SERVICES_NAMES[0]}.${IMG_EXT.jpg}`}
               alt={SERVICES_NAMES[0]}
               width={1260}
               height={840}
@@ -101,7 +102,7 @@ export default function HomePage () {
           </article>
           <article className='space-y-6'>
             <Image
-              src={`/images/sections/${SERVICES_NAMES[3]}.jpg`}
+              src={`${sectionsImgPath}${SERVICES_NAMES[3]}.${IMG_EXT.jpg}`}
               alt={SERVICES_NAMES[3]}
               width={1260}
               height={840}
@@ -119,7 +120,7 @@ export default function HomePage () {
         <div>
           <article className='space-y-6'>
             <Image
-              src={`/images/sections/${SERVICES_NAMES[1]}.jpg`}
+              src={`${sectionsImgPath}${SERVICES_NAMES[1]}.${IMG_EXT.jpg}`}
               alt={SERVICES_NAMES[1]}
               width={1260}
               height={840}
@@ -135,7 +136,7 @@ export default function HomePage () {
           </article>
           <article className='space-y-6'>
             <Image
-              src={`/images/sections/${SERVICES_NAMES[4]}.jpg`}
+              src={`${sectionsImgPath}${SERVICES_NAMES[4]}.${IMG_EXT.jpg}`}
               alt={SERVICES_NAMES[4]}
               width={1260}
               height={840}
@@ -153,7 +154,7 @@ export default function HomePage () {
         <div>
           <article className='space-y-6'>
             <Image
-              src={`/images/sections/${SERVICES_NAMES[2]}.jpg`}
+              src={`${sectionsImgPath}${SERVICES_NAMES[2]}.${IMG_EXT.jpg}`}
               alt={SERVICES_NAMES[2]}
               width={1260}
               height={840}
@@ -169,7 +170,7 @@ export default function HomePage () {
           </article>
           <article className='space-y-6'>
             <Image
-              src={`/images/sections/${SERVICES_NAMES[5]}.jpg`}
+              src={`${sectionsImgPath}${SERVICES_NAMES[5]}.${IMG_EXT.jpg}`}
               alt={SERVICES_NAMES[5]}
               width={1260}
               height={840}
@@ -210,7 +211,7 @@ export default function HomePage () {
         </div>
         <div className='w-1/4 hidden lg:block' />
         <Image
-          src='/images/sections/solutions.jpg'
+          src={`${sectionsImgPath}${NAV.solutions.href}.${IMG_EXT.jpg}`}
           alt={organization}
           className='md:w-auto md:h-2/3 mt-16 md:my-auto md:absolute md:left-[72%] md:top-0 md:bottom-0'
           width={1500}
@@ -239,7 +240,7 @@ export default function HomePage () {
           >
             <header className='flex items-center gap-x-5'>
               <Image
-                src={`/images/sections/${value}.svg`}
+                src={`${sectionsImgPath}${value}.${IMG_EXT.svg}`}
                 alt={value}
                 className='w-auto h-12'
                 width={64}
