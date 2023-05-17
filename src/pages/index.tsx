@@ -6,7 +6,7 @@ import PageLayout from '@/components/layout/PageLayout'
 // Config
 import { IMG_EXT } from '@/modules/data-display/config'
 import { SERVICES, VALUES, description, organization } from '@/modules/app/config'
-import { sectionsImgPath, PAGE_ROUTES, SECTION_ROUTES, NAV } from '@/modules/navigation/config'
+import { sectionsImgPath, PAGE_ROUTES, SECTION_ROUTES, NAV, APP_ROUTES } from '@/modules/navigation/config'
 // Types
 import type { MouseEvent } from 'react'
 
@@ -211,7 +211,7 @@ export default function HomePage () {
         </div>
         <div className='w-1/4 hidden lg:block' />
         <Image
-          src={`${sectionsImgPath}${NAV.solutions.href}.${IMG_EXT.jpg}`}
+          src={`${sectionsImgPath}${APP_ROUTES.solutions}.${IMG_EXT.jpg}`}
           alt={organization}
           className='md:w-auto md:h-2/3 mt-16 md:my-auto md:absolute md:left-[72%] md:top-0 md:bottom-0'
           width={1500}
