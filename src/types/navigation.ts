@@ -5,10 +5,10 @@ import type { Themeable } from './theme'
 import type { Size } from './sizing'
 
 /** The main routes for pages */
-export type PageRoute = 'home' | 'history' | 'contact'
+export type PageRoute = 'home' | 'contact'
 
 /** The main routes for sections */
-export type SectionRoute = 'solutions' | 'values'
+export type SectionRoute = 'solutions' | 'values' | 'history'
 
 /** The main routes for application */
 export type AppRoute = PageRoute | SectionRoute
