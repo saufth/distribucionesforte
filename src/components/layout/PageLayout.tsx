@@ -18,6 +18,7 @@ import type { PageLayoutConfig, PageLayoutProps } from '../../types/layout'
 /** The pages route name configuration */
 const PAGES_CONFIG: PageLayoutConfig = {
   home: '',
+  history: 'history',
   contact: 'contact'
 }
 

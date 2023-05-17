@@ -12,14 +12,14 @@ import type {
 /** The pages route names configuration */
 export const PAGE_ROUTES: PageRouteConfig = {
   home: 'home',
+  history: 'history',
   contact: 'contact'
 }
 
 /** The sections route names configuration */
 export const SECTION_ROUTES: SectionRouteConfig = {
   solutions: 'solutions',
-  values: 'values',
-  history: 'history'
+  values: 'values'
 }
 
 /** The application route names configuration */

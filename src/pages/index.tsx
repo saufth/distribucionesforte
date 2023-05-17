@@ -1,8 +1,8 @@
 // Components
 import Image from 'next/image'
 import LinkToAction from '@/components/navigation/LinkToAction'
+import LinkToHistory from '@/components/navigation/LinkToHistory'
 import LinkToServices from '@/components/navigation/LinkToServices'
-import LinkToValues from '@/components/navigation/LinkToValues'
 import PageLayout from '@/components/layout/PageLayout'
 // Config
 import { IMG_EXT } from '@/modules/data-display/config'
@@ -201,18 +201,31 @@ export default function HomePage () {
           />
         </div>
         <div className='md:w-2/3 lg:w-1/2 lg:pl-10 lg:pr-20 lg:py-48 lg:mx-auto space-y-14 lg:border-x lg:border-x-secondary/40'>
-          <p className='text-xl md:text-[27px] text-center md:text-left text-white md:leading-normal'>
-            Transformar la industria a través de la innovación. Nos esforzamos por ser líderes
-            en el desarrollo y la implementación de soluciones que mejoren la eficiencia y la
-            productividad en las empresas de nuestros clientes y asociados.
-          </p>
-          <p className='text-xl md:text-[27px] text-center md:text-left text-white md:leading-normal'>
-            Destacarnos del resto al manejar estándares de excelencia en todos nuestros servicios,
-            optimizando de manera innovadora los recursos y caminando con firmeza hacia el futuro
-            en la industria de la logística y transporte.
-          </p>
+          <article className='space-y-6'>
+            <header>
+              <h3 className='text-lg tetx-[27px] text-center md:text-left text-sky-400 md:leading-normal'>
+                Misión
+              </h3>
+            </header>
+            <p className='text-xl md:text-[27px] text-center md:text-left text-white md:leading-normal'>
+              Transformar la industria a través de la innovación. Nos esforzamos por ser líderes
+              en el desarrollo y la implementación de soluciones que mejoren la eficiencia y la
+              productividad en las empresas de nuestros clientes y asociados.
+            </p>
+          </article>
+          <article className='space-y-6'>
+            <header>
+              <h3 className='text-lg tetx-[27px] text-center md:text-left text-sky-400 md:leading-normal'>
+                Visión
+              </h3>
+            </header>
+            <p className='text-xl md:text-[27px] text-center md:text-left text-white md:leading-normal'>
+              Ofrecer soluciones disruptivas que cambian el juego en la industria.
+              Logrando una ventaja competitiva a través de la mejora continua.
+            </p>
+          </article>
           <div className='flex md:block justify-center'>
-            <LinkToValues />
+            <LinkToHistory />
           </div>
         </div>
         <div className='w-1/4 hidden lg:block' />
@@ -267,36 +280,6 @@ export default function HomePage () {
               {VALUES[value].description}
             </p>
           </article>))}
-      </section>
-
-      <section
-        id={SECTION_ROUTES.history}
-        className='lg:pt-24'
-      >
-        <div className='flex items-center gap-x-5'>
-          <div className='w-10 h-0.5 bg-sky-400' />
-          <h2 className='text-base text-sky-400'>
-            {NAV.history.children.toUpperCase()}
-          </h2>
-        </div>
-        <div className='max-w-8xl px-5% md:px-11% mx-auto my-24 text-center md:text-left space-y-6'>
-          <p>
-            Distribuciones Forte Innovation es la historia de esfuerzo y superación de un
-            grupo de personas que, movidos por su pasión a la construcción, comenzaron el
-            sueño de emprender a lo grande.
-          </p>
-          <p>
-            En sus inicios la compañía se centró en la renta y venta de materiales para la
-            construcción. No obstante, en el año 2020, en un mundo detenido por la pandemia,
-            Distribuciones Forte Innovation decide expandirse ante la gran demanda de
-            soluciones en el ámbito industrial en el mercado.
-          </p>
-          <p>
-            Actualmente, con más de 10 años de experiencia, la empresa ha logrado mantenerse
-            a la vanguardia gracias a su compromiso con la mejora continua y su capacidad
-            para adaptarse a las necesidades cambiantes de sus clientes.
-          </p>
-        </div>
       </section>
     </PageLayout>
   )
