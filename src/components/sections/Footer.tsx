@@ -31,14 +31,14 @@ export default function Footer () {
             </NextLink>
           </div>
           <nav>
-            <ul className='w-full flex flex-col lg:flex-row gap-4 text-center'>
+            <ul className='w-full flex flex-col lg:flex-row gap-y-4 lg:gap-x-6 text-center'>
               {NAV_LIST.map((navItem, key) => (
                 <li
                   className='last:hidden last:lg:block'
                   key={key}
                 >
                   <Link href={navItem.href} theme={THEMES.secondary} size={SIZES.sm}>
-                    {navItem.children}
+                    {navItem.children.toUpperCase()}
                   </Link>
                 </li>
               ))}

@@ -1,6 +1,6 @@
 // Types
 import type { HeaderListConfig } from '@/types/data-dislay'
-import { Author } from 'next/dist/lib/metadata/types/metadata-types'
+import type { Author } from 'next/dist/lib/metadata/types/metadata-types'
 
 /** The project author */
 export const author: Author = {
@@ -18,7 +18,7 @@ export const baseUrl = `https://${domain}/`
 export const organization = 'Distribuciones Forte Innovation'
 
 /** The head desciption of the application */
-export const description = 'Agregamos valor para nuestros clientes, cada día'
+export const description = 'Innovaciones que generan valor'
 
 /** The email of the organizacion */
 export const email = `contacto@${domain}`

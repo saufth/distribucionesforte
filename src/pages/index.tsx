@@ -1,6 +1,7 @@
 // Components
 import Image from 'next/image'
 import LinkToAction from '@/components/navigation/LinkToAction'
+import LinkToHistory from '@/components/navigation/LinkToHistory'
 import LinkToServices from '@/components/navigation/LinkToServices'
 import PageLayout from '@/components/layout/PageLayout'
 // Config
@@ -32,7 +33,7 @@ export default function HomePage () {
             </h1>
             <div className='lg:w-lg lg:p-14 lg:absolute lg:bottom-0 lg:-right-16 space-y-6 lg:bg-black/10 lg:backdrop-filter lg:backdrop-blur-3xl lg:backdrop-saturate-150'>
               <p className='text-lg text-white'>
-                Venta de materiales para la construcción e industria y mantenimiento industrial
+                Venta y distribución de material y equipo industrial y para la construcción
               </p>
               <div className='grid md:block place-content-center'>
                 <LinkToServices />
@@ -206,7 +207,7 @@ export default function HomePage () {
             en los procesos industriales.
           </p>
           <div className='flex md:block justify-center'>
-            <LinkToAction />
+            <LinkToHistory />
           </div>
         </div>
         <div className='w-1/4 hidden lg:block' />
@@ -218,6 +219,10 @@ export default function HomePage () {
           height={891}
         />
       </section>
+
+      <div className='h-24 grid place-content-center border-b border-b-secondary/40'>
+        <LinkToAction />
+      </div>
 
       <section className='py-24 lg:py-0 lg:grid lg:grid-cols-3 space-y-16 lg:space-y-0 lg:[&>*]:border-b lg:[&>*]:border-secondary/40'>
         <header className='lg:py-20 space-y-12 lg:space-y-24'>

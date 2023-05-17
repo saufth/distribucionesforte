@@ -6,15 +6,15 @@ import { NAV } from '@/modules/navigation/config'
 import type { Themeable } from '@/types/theme'
 
 /**
- * The main link to services component of the application
+ * The main link to history section component of the application
  * @see {@link Themeable} for props specifications
  * @param Themeable The component props
- * @returns The LinkToServices component
+ * @returns The LinkToHistory component
  */
-export default function LinkToServices ({ theme }: Themeable) {
+export default function LinkToHistory ({ theme }: Themeable) {
   return (
-    <LinkButton href={NAV.solutions.href} theme={theme}>
-      {NAV.solutions.children}
+    <LinkButton href={NAV.history.href} theme={theme}>
+      {NAV.history.children}
     </LinkButton>
   )
 }

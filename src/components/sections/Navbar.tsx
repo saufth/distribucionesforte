@@ -1,6 +1,7 @@
 // Components
 import Image from 'next/image'
 import Link from '../navigation/core/Link'
+import LinkToAction from '../navigation/LinkToAction'
 import NextLink from 'next/link'
 import Menu from '../navigation/Menu'
 import MenuButton from '../input/core/MenuButton'
@@ -53,16 +54,7 @@ export default function Navbar () {
           </div>
 
           <div className='lg:w-1/4 pr-3% flex justify-end items-center md:gap-x-4'>
-            <NextLink href={NAV.contact.href}>
-              <div className='hidden md:flex gap-x-4 items-center'>
-                <div className='font-primary-semibold text-white'>
-                  CONTÁCTANOS
-                </div>
-                <div className='w-7 h-7 grid place-content-center text-primary text-lg bg-white rounded-full leading-none'>
-                  @
-                </div>
-              </div>
-            </NextLink>
+            <LinkToAction theme={THEMES.secondary} />
             {isOpen
               ? (
                 <div
