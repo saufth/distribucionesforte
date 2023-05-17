@@ -22,7 +22,7 @@ const THEME_STYLES: Readonly<Record<Theme, string>> = {
 export default function LinkToAction ({ theme = THEMES.primary }: Themeable) {
   return (
     <NextLink href={NAV.contact.href}>
-      <div className={`hidden md:flex gap-x-4 items-center ${THEME_STYLES[theme]}`}>
+      <div className={`flex gap-x-4 items-center ${THEME_STYLES[theme]}`}>
         <span className='max-w-fit font-primary-semibold'>
           CONTÁCTANOS
         </span>

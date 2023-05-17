@@ -61,11 +61,9 @@ export default function ContactPage () {
   return (
     <PageLayout page={PAGE_ROUTES.contact}>
       <section>
-        <Hero
-          heading='Pongamosnos en contacto'
-          tagline='¿Tomamos un café?'
-          image={PAGE_ROUTES.contact}
-        />
+        <Hero>
+          Pongamosnos en contacto
+        </Hero>
         <div className='max-w-4xl px-5% my-24 mx-auto space-y-12'>
           <form
             className='space-y-8'

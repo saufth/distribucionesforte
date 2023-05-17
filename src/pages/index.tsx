@@ -33,7 +33,7 @@ export default function HomePage () {
             </h1>
             <div className='lg:w-lg lg:p-14 lg:absolute lg:bottom-0 lg:-right-16 space-y-6 lg:bg-black/10 lg:backdrop-filter lg:backdrop-blur-3xl lg:backdrop-saturate-150'>
               <p className='text-lg text-white'>
-                Venta y distribución de material y equipo industrial y para la construcción
+                Venta y distribución de material y equipo para la construcción e industria maquiladora.
               </p>
               <div className='grid md:block place-content-center'>
                 <LinkToServices />
@@ -189,7 +189,7 @@ export default function HomePage () {
       </section>
 
       <section
-        className='px-3% lg:px-0 pt-24 pb-[3vw] md:py-32 lg:py-0 md:relative lg:flex lg:items-center lg:justify-start lg:gap-y-12 md:gap-y-14 bg-gradient-to-bl from-primary via-primary-light to-primary-light'
+        className='px-3% lg:px-0 pt-24 pb-[3vw] md:py-32 lg:py-0 md:relative lg:flex lg:items-center lg:justify-start lg:gap-y-12 md:gap-y-14 bg-gradient-primary'
       >
         <div className='lg:w-1/4 lg:pr-10 mb-16 lg:mb-0 flex md:block lg:flex justify-center lg:justify-end'>
           <Image

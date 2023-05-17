@@ -40,7 +40,7 @@
   }
 
   h2 {
-    @apply text-[32px] leading-none md:text-[44px];
+    @apply text-4xl leading-none md:text-5xl;
   }
 
   h3 {
@@ -67,5 +67,11 @@
   @font-face {
     font-family: Primary Bold;
     src: url(../../public/fonts/primary/bold.ttf);
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    @apply bg-gradient-to-bl from-primary via-primary-light to-primary-light;
   }
 }

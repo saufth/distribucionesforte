@@ -1,9 +1,9 @@
 // Components
 import Image from 'next/image'
-import Link from '../navigation/core/Link'
-import LinkToAction from '../navigation/LinkToAction'
+import Link from './core/Link'
+import LinkToAction from './LinkToAction'
 import NextLink from 'next/link'
-import Menu from '../navigation/Menu'
+import Menu from './Menu'
 import MenuButton from '../input/core/MenuButton'
 // Animation
 import { useCycle } from 'framer-motion'
@@ -53,8 +53,10 @@ export default function Navbar () {
             })}
           </div>
 
-          <div className='lg:w-1/4 pr-3% flex justify-end items-center md:gap-x-4'>
-            <LinkToAction theme={THEMES.secondary} />
+          <div className='lg:w-1/4 pr-3% flex justify-end items-center md:gap-x-6'>
+            <span className='hidden md:block'>
+              <LinkToAction theme={THEMES.secondary} />
+            </span>
             {isOpen
               ? (
                 <div

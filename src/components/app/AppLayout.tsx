@@ -4,7 +4,7 @@ import GoogleSearchScript from './GoogleSearchScript'
 // eslint-disable-next-line import/no-restricted-paths
 import GoogleAnalyticsScript from './GoogleAnalyticsScript'
 import Footer from '@/components/sections/Footer'
-import Navbar from '@/components/sections/Navbar'
+import Navbar from '@/components/navigation/Navbar'
 // Types
 import type { Parent } from '../../types/layout'
 

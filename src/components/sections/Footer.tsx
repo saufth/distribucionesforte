@@ -22,11 +22,20 @@ export default function Footer () {
           <div className='lg:w-[232px] grid lg:block place-content-center'>
             <NextLink href='/'>
               <Image
-                src='/images/logomark-white.svg'
+                className='w-auto h-10 hidden lg:block'
+                src='/images/logo-vertical-white.svg'
                 alt={organization}
-                className='w-auto h-9'
-                width={36}
-                height={35}
+                width={196}
+                height={56}
+                priority
+              />
+              <Image
+                className='w-auto h-16 lg:hidden'
+                src='/images/logo-white.svg'
+                alt={organization}
+                width={698}
+                height={570}
+                priority
               />
             </NextLink>
           </div>
@@ -47,16 +56,14 @@ export default function Footer () {
           <div className='lg:w-[232px] text-center lg:text-right'>
             <LinkEmail theme={THEMES.secondary} />
           </div>
-          <div className='lg:hidden grid place-content-center'>
-            <LinkToAction />
+          <div className='grid place-content-center lg:hidden'>
+            <LinkToAction theme={THEMES.secondary} />
           </div>
         </div>
       </div>
       <div className='bg-primary'>
         <div className='max-w-8xl px-1 py-4 mx-auto text-white text-center'>
-          <div>
-            {copyright}
-          </div>
+          {copyright}
         </div>
       </div>
     </footer>
