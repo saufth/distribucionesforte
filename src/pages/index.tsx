@@ -210,7 +210,7 @@ export default function HomePage () {
             <p className='text-xl md:text-[27px] text-center md:text-left text-white md:leading-normal'>
               Transformar la industria a través de la innovación. Nos esforzamos por ser líderes
               en el desarrollo y la implementación de soluciones que mejoren la eficiencia y la
-              productividad en las empresas de nuestros clientes y asociados.
+              productividad en los procesos industriales.
             </p>
           </article>
           <article className='space-y-6'>
