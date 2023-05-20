@@ -154,7 +154,7 @@ We could develop our folder structure in this way:
     - navigation
       - core
         - Link.tsx
-      - Menu.tsx
+      - Navbar.tsx
 ```
 
 The components folder can contain a core folder for each module, this contain small and reutilizable components used for create complex componentes out of core folders and pages, such like atomic design pattern: atoms (components/core) -> molecules (components) -> organism (pages).
