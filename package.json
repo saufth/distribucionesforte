@@ -2,6 +2,13 @@
   "name": "forte-innovation",
   "version": "1.0.5",
   "private": true,
+  "homepage": "https://forteinnovation.com/",
+  "engines": {
+    "node": "18.x",
+    "pnpm": "8.x",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

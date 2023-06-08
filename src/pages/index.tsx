@@ -63,7 +63,7 @@ export default function HomePage () {
 
       <section
         id={SECTION_ROUTES.solutions}
-        className='py-24 lg:py-0 lg:grid lg:grid-cols-4 space-y-32 lg:space-y-0 lg:[&>div]:px-10 lg:[&>div]:py-24 [&>div]:space-y-32 lg:[&>div]:space-y-20 lg:[&>div]:grid lg:[&>div]:place-content-center lg:[&>div]:border-l lg:[&>div]:border-l-secondary/40'
+        className='py-24 lg:py-0 lg:grid lg:grid-cols-4 space-y-32 lg:space-y-0 lg:[&>div]:px-10 lg:[&>div]:py-24 [&>div]:space-y-32 lg:[&>div]:space-y-20 lg:[&>div]:grid lg:[&>div]:place-content-start lg:[&>div]:border-l lg:[&>div]:border-l-secondary/40'
       >
         <header className='lg:py-20 space-y-12 lg:space-y-24'>
           <div className='flex items-center gap-x-4'>
